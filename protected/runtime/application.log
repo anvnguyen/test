@@ -1,0 +1,587 @@
+2017/02/20 16:46:50 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "gii". in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2017/02/20 17:17:51 [error] [php] Undefined variable: fn (/Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php:126)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(133): TransactionController->runAction()
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CInlineFilter.php(58): TransactionController->filterAccessControl()
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(265): TransactionController->runActionWithFilters()
+#7 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(282): TransactionController->run()
+#8 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=transaction
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php (126)
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php (13)
+2017/02/20 17:38:45 [error] [exception.CException] CException: Transaction and its behaviors do not have a method or closure named "countAll". in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CComponent.php:266
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/db/ar/CActiveRecord.php(227): CComponent->__call('countAll', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/models/Transaction.php(107): CActiveRecord->__call('countAll', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php(126): Transaction::initDB()
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/actions/CInlineAction.php(49): TransactionController->actionIndex()
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(291): CFilterChain->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(141): CWebApplication->runController('transaction')
+#14 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=transaction
+---
+2017/02/20 17:55:49 [error] [php] Only variables should be passed by reference (/Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/models/Transaction.php:114)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(133): TransactionController->runAction()
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CInlineFilter.php(58): TransactionController->filterAccessControl()
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(291): CFilterChain->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(265): TransactionController->runActionWithFilters()
+#8 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(282): TransactionController->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=transaction
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/models/Transaction.php (114)
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php (126)
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php (13)
+2017/02/20 17:56:20 [error] [php] array_push() expects at least 2 parameters, 1 given (/Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/models/Transaction.php:115)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/actions/CInlineAction.php(49): TransactionController->actionIndex()
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(133): TransactionController->runAction()
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CInlineFilter.php(58): TransactionController->filterAccessControl()
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(291): CFilterChain->run()
+#8 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(265): TransactionController->runActionWithFilters()
+#9 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(282): TransactionController->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=transaction
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/models/Transaction.php (115)
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php (126)
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php (13)
+2017/02/20 18:07:48 [error] [php] Undefined variable: db (/Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/models/Transaction.php:118)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(133): TransactionController->runAction()
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CInlineFilter.php(58): TransactionController->filterAccessControl()
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(291): CFilterChain->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(265): TransactionController->runActionWithFilters()
+#8 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(282): TransactionController->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=transaction
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/models/Transaction.php (118)
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php (126)
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php (13)
+2017/02/20 18:07:54 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 13 Can't get stat of '/Applications/XAMPP/xamppfiles/var/mysql/protected/data/testdata.csv' (Errcode: 2 "No such file or directory"). The SQL statement executed was:     LOAD DATA INFILE 'protected/data/testdata.csv'
+     INTO TABLE transaction
+     FIELDS TERMINATED BY '|' OPTIONALLY ENCLOSED BY '"'
+     LINES TERMINATED BY '
+'
+    (Payment_date,personId,playingCurrency,playingOriginalAmount).
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/models/Transaction.php (120)
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php (126)
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php (13)
+2017/02/20 18:07:54 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 13 Can't get stat of '/Applications/XAMPP/xamppfiles/var/mysql/protected/data/testdata.csv' (Errcode: 2 "No such file or directory"). The SQL statement executed was:     LOAD DATA INFILE 'protected/data/testdata.csv'
+     INTO TABLE transaction
+     FIELDS TERMINATED BY '|' OPTIONALLY ENCLOSED BY '"'
+     LINES TERMINATED BY '
+'
+    (Payment_date,personId,playingCurrency,playingOriginalAmount) in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/models/Transaction.php(120): CDbCommand->execute()
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php(126): Transaction::initDB()
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/actions/CInlineAction.php(49): TransactionController->actionIndex()
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(291): CFilterChain->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(282): CController->run('')
+#12 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(141): CWebApplication->runController('transaction')
+#13 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=transaction
+---
+2017/02/20 18:08:25 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 13 Can't get stat of '/protected/data/testdata.csv' (Errcode: 2 "No such file or directory"). The SQL statement executed was:     LOAD DATA INFILE '/protected/data/testdata.csv'
+     INTO TABLE transaction
+     FIELDS TERMINATED BY '|' OPTIONALLY ENCLOSED BY '"'
+     LINES TERMINATED BY '
+'
+    (Payment_date,personId,playingCurrency,playingOriginalAmount).
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/models/Transaction.php (120)
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php (126)
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php (13)
+2017/02/20 18:08:25 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 13 Can't get stat of '/protected/data/testdata.csv' (Errcode: 2 "No such file or directory"). The SQL statement executed was:     LOAD DATA INFILE '/protected/data/testdata.csv'
+     INTO TABLE transaction
+     FIELDS TERMINATED BY '|' OPTIONALLY ENCLOSED BY '"'
+     LINES TERMINATED BY '
+'
+    (Payment_date,personId,playingCurrency,playingOriginalAmount) in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/models/Transaction.php(120): CDbCommand->execute()
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php(126): Transaction::initDB()
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/actions/CInlineAction.php(49): TransactionController->actionIndex()
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(291): CFilterChain->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(282): CController->run('')
+#12 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(141): CWebApplication->runController('transaction')
+#13 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=transaction
+---
+2017/02/20 18:26:28 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IGNORE 1 LINES' at line 6. The SQL statement executed was: 	LOAD DATA INFILE '/Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/data/testdata.csv'
+	INTO TABLE transaction
+	FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+	LINES TERMINATED BY '
+'
+	(Payment_date,personId,playingCurrency,playingOriginalAmount)
+	IGNORE 1 LINES.
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/models/Transaction.php (121)
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php (126)
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php (13)
+2017/02/20 18:26:28 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IGNORE 1 LINES' at line 6. The SQL statement executed was: 	LOAD DATA INFILE '/Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/data/testdata.csv'
+	INTO TABLE transaction
+	FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+	LINES TERMINATED BY '
+'
+	(Payment_date,personId,playingCurrency,playingOriginalAmount)
+	IGNORE 1 LINES in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/models/Transaction.php(121): CDbCommand->execute()
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php(126): Transaction::initDB()
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/actions/CInlineAction.php(49): TransactionController->actionIndex()
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(291): CFilterChain->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(282): CController->run('')
+#12 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(141): CWebApplication->runController('transaction')
+#13 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=transaction
+---
+2017/02/20 18:38:34 [error] [exception.CException] CException: Alias "application.vendor.yiibooster" is invalid. Make sure it points to an existing PHP file and the file is readable. in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php:323
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(196): YiiBase::import('application.ven...', true)
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CModule.php(530): CModule->getComponent('booster')
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(168): CModule->preloadComponents()
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(125): CApplication->__construct(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): YiiBase::createWebApplication('/Applications/X...')
+#7 {main}
+REQUEST_URI=/index.php?r=transaction
+---
+2017/02/20 18:40:57 [error] [exception.CException] CException: Alias "application.vendor.yiibooster.components.Booster" is invalid. Make sure it points to an existing PHP file and the file is readable. in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php:323
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(196): YiiBase::import('application.ven...', true)
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CModule.php(530): CModule->getComponent('booster')
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(168): CModule->preloadComponents()
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(125): CApplication->__construct(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): YiiBase::createWebApplication('/Applications/X...')
+#7 {main}
+REQUEST_URI=/index.php?r=transaction
+---
+2017/02/20 18:41:08 [error] [exception.CException] CException: Alias "application.vendor.yiibooster.components.Booster.php" is invalid. Make sure it points to an existing PHP file and the file is readable. in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php:323
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(196): YiiBase::import('application.ven...', true)
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CModule.php(530): CModule->getComponent('booster')
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(168): CModule->preloadComponents()
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(125): CApplication->__construct(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): YiiBase::createWebApplication('/Applications/X...')
+#7 {main}
+REQUEST_URI=/index.php?r=transaction
+---
+2017/02/20 18:50:03 [error] [exception.CException] CException: Alias "application.extensions.yiibooster.components.Booster" is invalid. Make sure it points to an existing PHP file and the file is readable. in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php:323
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(196): YiiBase::import('application.ext...', true)
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CModule.php(530): CModule->getComponent('booster')
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(168): CModule->preloadComponents()
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(125): CApplication->__construct(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): YiiBase::createWebApplication('/Applications/X...')
+#7 {main}
+REQUEST_URI=/index.php?r=transaction
+---
+2017/02/20 18:50:17 [error] [exception.CException] CException: Alias "application.extensions.booster.components.Booster" is invalid. Make sure it points to an existing PHP file and the file is readable. in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php:323
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(196): YiiBase::import('application.ext...', true)
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CModule.php(530): CModule->getComponent('booster')
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(168): CModule->preloadComponents()
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(125): CApplication->__construct(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): YiiBase::createWebApplication('/Applications/X...')
+#7 {main}
+REQUEST_URI=/index.php?r=transaction
+---
+2017/02/20 18:54:47 [error] [exception.CException] CException: Alias "ext.booster.components.Booster" is invalid. Make sure it points to an existing PHP file and the file is readable. in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php:323
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(196): YiiBase::import('ext.booster.com...', true)
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CModule.php(530): CModule->getComponent('booster')
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(168): CModule->preloadComponents()
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(125): CApplication->__construct(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): YiiBase::createWebApplication('/Applications/X...')
+#7 {main}
+REQUEST_URI=/index.php?r=transaction
+---
+2017/02/20 18:55:19 [error] [exception.CException] CException: Alias "ext.booster.components.Booster" is invalid. Make sure it points to an existing PHP file and the file is readable. in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php:323
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(196): YiiBase::import('ext.booster.com...', true)
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CModule.php(530): CModule->getComponent('booster')
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(168): CModule->preloadComponents()
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(125): CApplication->__construct(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): YiiBase::createWebApplication('/Applications/X...')
+#7 {main}
+REQUEST_URI=/index.php?r=transaction
+---
+2017/02/20 19:03:10 [error] [exception.CException] CException: Alias "ext.booster.components.Booster" is invalid. Make sure it points to an existing PHP file and the file is readable. in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php:323
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(196): YiiBase::import('ext.booster.com...', true)
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CModule.php(530): CModule->getComponent('booster')
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(168): CModule->preloadComponents()
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(125): CApplication->__construct(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): YiiBase::createWebApplication('/Applications/X...')
+#7 {main}
+REQUEST_URI=/index.php?r=transaction
+---
+2017/02/21 01:53:55 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbGridView" is invalid. Make sure it points to an existing directory or file. in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php:348
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(TransactionController), 'bootstrap.widge...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(180): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/views/transaction/index.php(8): CBaseController->widget('bootstrap.widge...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(126): require('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php(136): CController->render('index', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/actions/CInlineAction.php(49): TransactionController->actionIndex()
+#10 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(291): CFilterChain->run()
+#17 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(282): CController->run('')
+#19 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(141): CWebApplication->runController('transaction')
+#20 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#21 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php?r=transaction
+---
+2017/02/21 01:57:41 [error] [php] include(TbDataColumn.php): failed to open stream: No such file or directory (/Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php:432)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/extensions/bootstrap/widgets/TbGridView.php(92): spl_autoload_call()
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/zii/widgets/grid/CGridView.php(383): TbGridView->createDataColumn()
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/extensions/bootstrap/widgets/TbGridView.php(75): TbGridView->initColumns()
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/zii/widgets/grid/CGridView.php(359): TbGridView->initColumns()
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/extensions/bootstrap/widgets/TbGridView.php(44): TbGridView->init()
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(147): TbGridView->init()
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(180): TransactionController->createWidget()
+#7 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/views/transaction/index.php(8): TransactionController->widget()
+#8 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(126): require()
+#9 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(95): TransactionController->renderInternal()
+#10 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(869): TransactionController->renderFile()
+#11 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(782): TransactionController->renderPartial()
+#12 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php(136): TransactionController->render()
+#13 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/actions/CInlineAction.php(49): TransactionController->actionIndex()
+#14 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(308): CInlineAction->runWithParams()
+#15 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(133): TransactionController->runAction()
+#16 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#18 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CInlineFilter.php(58): TransactionController->filterAccessControl()
+#19 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#20 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(291): CFilterChain->run()
+#21 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(265): TransactionController->runActionWithFilters()
+#22 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(282): TransactionController->run()
+#23 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#24 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=transaction
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/extensions/bootstrap/widgets/TbGridView.php (92)
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/extensions/bootstrap/widgets/TbGridView.php (75)
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/extensions/bootstrap/widgets/TbGridView.php (44)
+2017/02/21 01:58:37 [error] [php] include(TbWidget.php): failed to open stream: No such file or directory (/Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php:432)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/extensions/bootstrap/widgets/TbNav.php(65): spl_autoload_call()
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(147): TbNav->init()
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(180): TransactionController->createWidget()
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/views/transaction/index.php(8): TransactionController->widget()
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(126): require()
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(95): TransactionController->renderInternal()
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(869): TransactionController->renderFile()
+#7 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(782): TransactionController->renderPartial()
+#8 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php(136): TransactionController->render()
+#9 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/actions/CInlineAction.php(49): TransactionController->actionIndex()
+#10 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(133): TransactionController->runAction()
+#12 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#14 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CInlineFilter.php(58): TransactionController->filterAccessControl()
+#15 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(291): CFilterChain->run()
+#17 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(265): TransactionController->runActionWithFilters()
+#18 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(282): TransactionController->run()
+#19 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#21 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=transaction
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/extensions/bootstrap/widgets/TbNav.php (65)
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/views/transaction/index.php (8)
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php (136)
+2017/02/21 02:15:30 [error] [exception.ParseError] ParseError: syntax error, unexpected '$results' (T_VARIABLE) in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/models/Transaction.php:132
+Stack trace:
+#0 [internal function]: YiiBase::autoload('Transaction')
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php(126): spl_autoload_call('Transaction')
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/actions/CInlineAction.php(49): TransactionController->actionIndex()
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(291): CFilterChain->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(282): CController->run('')
+#12 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(141): CWebApplication->runController('transaction')
+#13 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=transaction
+---
+2017/02/21 02:15:33 [error] [exception.ParseError] ParseError: syntax error, unexpected '$results' (T_VARIABLE) in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/models/Transaction.php:132
+Stack trace:
+#0 [internal function]: YiiBase::autoload('Transaction')
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php(156): spl_autoload_call('Transaction')
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/actions/CInlineAction.php(49): TransactionController->actionGetData()
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(291): CFilterChain->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(141): CWebApplication->runController('transaction/get...')
+#13 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=transaction/getData
+---
+2017/02/21 02:15:40 [error] [php] Undefined index: month (/Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/models/Transaction.php:135)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(133): TransactionController->runAction()
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CInlineFilter.php(58): TransactionController->filterAccessControl()
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(291): CFilterChain->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(265): TransactionController->runActionWithFilters()
+#8 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(282): TransactionController->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=transaction/getData
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/models/Transaction.php (135)
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php (156)
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php (13)
+2017/02/21 02:28:50 [error] [exception.CException] CException: Property "TransactionController.pageCaption" is not defined. in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/themes/bootstrap/views/layouts/column2.php(4): CComponent->__get('pageCaption')
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(126): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(784): CBaseController->renderFile('/Applications/X...', Array, true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php(136): CController->render('index', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/actions/CInlineAction.php(49): TransactionController->actionIndex()
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(291): CFilterChain->run()
+#13 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(282): CController->run('')
+#15 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(141): CWebApplication->runController('transaction')
+#16 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=transaction
+---
+2017/02/21 02:29:29 [error] [php] include(BController.php): failed to open stream: No such file or directory (/Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php:432)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/components/Controller.php(25): spl_autoload_call()
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(281): TransactionController->init()
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=transaction
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/components/Controller.php (25)
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php (13)
+2017/02/21 02:29:57 [error] [php] include(BController.php): failed to open stream: No such file or directory (/Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php:432)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/components/Controller.php(25): spl_autoload_call()
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(281): TransactionController->init()
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=transaction
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/components/Controller.php (25)
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php (13)
+2017/02/21 02:30:18 [error] [php] include(BController.php): failed to open stream: No such file or directory (/Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/YiiBase.php:432)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/components/Controller.php(25): spl_autoload_call()
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(281): TransactionController->init()
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=transaction
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/components/Controller.php (25)
+in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php (13)
+2017/02/21 03:34:50 [error] [exception.Exception] Exception: Invalid Bootstrap path and CDN URL not set. Set vendor.twbs.bootstrap.dist alias or cdnUrl parameter in the configuration file. in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/extensions/bootstrap/components/TbApi.php:245
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/extensions/bootstrap/components/TbApi.php(75): TbApi->getBootstrapUrl()
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/extensions/bootstrap/components/TbApi.php(122): TbApi->registerCoreCss()
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/extensions/bootstrap/components/TbApi.php(167): TbApi->registerAllCss()
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/views/layouts/main.php(2): TbApi->register()
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(126): require('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Applications/X...', Array, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(214): COutputProcessor->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#11 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/views/layouts/column2.php(22): CBaseController->endContent()
+#12 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(126): require('/Applications/X...')
+#13 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#14 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(784): CBaseController->renderFile('/Applications/X...', Array, true)
+#15 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php(136): CController->render('index', Array)
+#16 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/actions/CInlineAction.php(49): TransactionController->actionIndex()
+#17 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(291): CFilterChain->run()
+#24 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(282): CController->run('')
+#26 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#27 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/
+---
+2017/02/21 04:03:32 [error] [exception.CException] CException: Property "CWebApplication.bootstrap" is not defined. in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/views/layouts/main.php(2): CModule->__get('bootstrap')
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(126): require('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Applications/X...', Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(214): COutputProcessor->run()
+#8 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/views/layouts/column2.php(22): CBaseController->endContent()
+#10 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(126): require('/Applications/X...')
+#11 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#12 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(784): CBaseController->renderFile('/Applications/X...', Array, true)
+#13 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php(136): CController->render('index', Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/actions/CInlineAction.php(49): TransactionController->actionIndex()
+#15 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(291): CFilterChain->run()
+#22 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(282): CController->run('')
+#24 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(141): CWebApplication->runController('transaction')
+#25 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#26 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/index.php?r=transaction
+---
+2017/02/21 04:08:33 [error] [exception.CException] CException: Property "TransactionController.pageCaption" is not defined. in /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/themes/bootstrap/views/layouts/column2.php(4): CComponent->__get('pageCaption')
+#1 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(126): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#3 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(784): CBaseController->renderFile('/Applications/X...', Array, true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/protected/controllers/TransactionController.php(136): CController->render('index', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/actions/CInlineAction.php(49): TransactionController->actionIndex()
+#6 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(291): CFilterChain->run()
+#13 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(282): CController->run('')
+#15 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/web/CWebApplication.php(141): CWebApplication->runController('transaction')
+#16 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /Applications/XAMPP/xamppfiles/htdocs/anvnguyen/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=transaction
+---
