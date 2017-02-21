@@ -9,3 +9,7 @@
 - At the first load, this project will import the csv file: /protected/data/test.csv into database named "chart"
 - It shows line chart of the order data by default.
 - Change the chart by selecting the values in dropdown box.
+
+# Some techique 
+- I use hightcharts for the chart display
+- I use LOAD DATA INFILE of MySQL, so the insert time should be less than 1s https://dev.mysql.com/doc/refman/5.7/en/load-data.html
